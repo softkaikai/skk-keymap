@@ -1,0 +1,2 @@
+# skk-keymap
+keyboard shortcut
