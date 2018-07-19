@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <input type="text" id="inp">
+</div>
+
+<script src="../keymap.js"></script>
+<script>
+    var keymap = new Keymap(document.getElementById('inp'));
+    /*keymap.bind('a', function(e) {
+        console.log(e.type, e);
+    }, ['keypress', 'keyup', 'keydown']).bind('c', function(e) {
+        console.log(e.type, e);
+    });
+    keymap.bind(['shift+alt+a', 'b'], function(e) {
+        console.log('shift+a', e.type, e);
+    }, ['keypress', 'keyup', 'keydown'])*/
+    function test(e) {
+        console.log(e.type, e);
+    }
+    function test1(e) {
+        console.log(e.type, e);
+    }
+    keymap.bind('a', test, ['keydown', 'keyup']).bind('a', test1, ['keydown', 'keyup']);
+    keymap.unbind('a', test1, ['keydown', 'keyup']).unbind('a', test, ['keydown', 'keyup'])
+</script>
+</body>
+</html>

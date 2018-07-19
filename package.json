@@ -1,0 +1,23 @@
+{
+  "name": "skk-keymap",
+  "version": "1.0.0",
+  "description": "shortcut",
+  "main": "keymap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softkaikai/skk-keymap.git"
+  },
+  "keywords": [
+    "key",
+    "map"
+  ],
+  "author": "softkaikai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/softkaikai/skk-keymap/issues"
+  },
+  "homepage": "https://github.com/softkaikai/skk-keymap#readme"
+}
