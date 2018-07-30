@@ -183,4 +183,14 @@
     };
 
     window.Keymap = Keymap;
+
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = Keymap;
+    }
+
+    if (typeof define === 'function' && define.amd) {
+        define(function() {
+            return Keymap;
+        });
+    }
 })();
